@@ -18,17 +18,63 @@
 }
 
 .imageWrapper {
-  display: contents;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
   position: relative;
   align-content: center;
+  justify-content: center;
 }
 
 .cardText {
+  font-size: 2.25em;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: calc(50% - .5em);
+  margin: 0;
   color: black;
-  filter: drop-shadow(0 0 1em black);
-  font-size: large;
+}
+
+.flippedCardText {
+  transform: rotate(180deg);
+  font-size: 1.75em;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: calc(40% - .5em);
+  margin: 0;
+  color: rgb(54, 54, 54);
 }
 
 .cardContainer {
+  display: flex;
   flex-direction: row;
+  gap: 1em;
+  width: fit-content;
+}
+
+.buttonContainer{
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  column-gap: 18em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  justify-self: center;
+}
+
+.buttonText{
+  color: black;
+}
+
+.flippedOrientationButtons{
+  transform: rotate(180deg);
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  column-gap: 18em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  justify-self: center;
 }

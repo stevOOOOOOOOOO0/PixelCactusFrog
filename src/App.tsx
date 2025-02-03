@@ -1,5 +1,5 @@
 import { useState } from "react";
-import wordCard from "./components/wordCard";
+import WordCard from "./components/WordCard";
 import "./App.css";
 
 function App() {
@@ -10,35 +10,37 @@ function App() {
 
   return (
     <>
-      <div>
-        <span>{wordCard()}</span>
-        <span>{wordCard()}</span>
-        <span>{wordCard()}</span>
-      </div>
-      <div className="card">
-        <button
-          onClick={() => setCount1((count1) => count1 + 1)}
-          className="playerButton"
-        >
-          Player 1: {count1}
-        </button>
-        <button
-          onClick={() => setCount2((count2) => count2 + 1)}
-          className="playerButton"
-        >
-          Player 2: {count2}
-        </button>
+      <div className="flippedOrientationButtons">
         <button
           onClick={() => setCount3((count3) => count3 + 1)}
           className="playerButton"
         >
-          Player 3: {count3}
+          <text className="buttonText">Player 3: {count3} </text>
         </button>
         <button
           onClick={() => setCount4((count4) => count4 + 1)}
           className="playerButton"
         >
-          Player 4: {count4}
+          <text className="buttonText">Player 4: {count4} </text>
+        </button>
+      </div>
+      <div className="cardContainer">
+        <WordCard />
+        <WordCard />
+        <WordCard />
+      </div>
+      <div className="buttonContainer">
+        <button
+          onClick={() => setCount1((count1) => count1 + 1)}
+          className="playerButton"
+        >
+          <text className="buttonText">Player 1: {count1} </text>
+        </button>
+        <button
+          onClick={() => setCount2((count2) => count2 + 1)}
+          className="playerButton"
+        >
+          <text className="buttonText">Player 2: {count2} </text>
         </button>
       </div>
     </>
