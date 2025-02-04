@@ -35,6 +35,7 @@
   color: black;
   word-wrap: break-word;
   line-height: 1.1;
+  font-size: 4vw;
 }
 
 .flippedCardText {
@@ -49,6 +50,103 @@
   line-height: 1.1;
 }
 
+
+.imageDiv {
+  width: 2px;
+}
+
+@media (min-width: 375px){
+  .imageDiv {
+    width: 90px;
+  }
+  
+  .cardText {
+    width: 80px;
+    font-size: 1em;
+  }
+
+  .flippedCardText {
+    width: 80px;
+    font-size: 1em;
+  }
+  
+  .playerButton {
+    height: 3em;
+    width: 7.5em;
+    font-size: .75em;
+  }
+}
+
+@media (min-width: 500px){
+  .imageDiv {
+    width: 120px;
+  }
+  
+  .cardText {
+    width: 100px;
+    font-size: 1.25em;
+  }
+
+  .flippedCardText {
+    width: 100px;
+    font-size: 1.25em;
+  }
+  
+  .playerButton {
+    height: 3em;
+    width: 7.5em;
+    font-size: .75em;
+  }
+}
+
+@media (min-width: 700px) {
+  .imageDiv {
+    width: 200px;
+  }
+  
+  .cardText {
+    width: 180px;
+    font-size: 2em;
+  }
+
+  .flippedCardText {
+    width: 180px;
+    font-size: 2em;
+  }
+  
+  .playerButton {
+    height: 2.5em;
+    width: 10em;
+    will-change: filter;
+    transition: filter 300ms;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1400px){
+  .imageDiv {
+    width: 400px;
+  }
+  
+  .cardText {
+    width: 360px;
+    font-size: 4em;
+  }
+
+  .flippedCardText {
+    width: 360px;
+    font-size: 4em;
+  }
+  
+  .playerButton {
+    height: 3.5em;
+    width: 10em;
+    will-change: filter;
+    transition: filter 300ms;
+    font-size: 1em;
+  }
+}
+
 .cardContainer {
   display: flex;
   flex-direction: row;
@@ -59,12 +157,12 @@
 
 .buttonContainer{
   display: flex;
-  width: fit-content;
+  width:75%;
   flex-direction: row;
-  column-gap: 18em;
   margin-top: .5em;
   margin-bottom: .5em;
   justify-self: center;
+  justify-content: space-between;
 }
 
 .buttonText{
@@ -75,10 +173,17 @@
 .flippedOrientationButtons{
   transform: rotate(180deg);
   display: flex;
-  width: fit-content;
+  width:75%;
   flex-direction: row;
-  column-gap: 18em;
   margin-top: .5em;
   margin-bottom: .5em;
   justify-self: center;
+  justify-content: space-between;
+}
+
+.settingsDropDown{
+  display: flex;
+  position: absolute;
+  justify-self: left;
+  margin-left: 5vw;
 }

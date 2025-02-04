@@ -7,6 +7,7 @@ function App() {
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
   const [count4, setCount4] = useState(0);
+  const [key, setKey] = useState(0);
 
   return (
     <>
@@ -24,7 +25,10 @@ function App() {
           <text className="buttonText">Player 4: {count4} </text>
         </button>
       </div>
-      <div className="cardContainer">
+      <div
+        className="cardContainer"
+        onClick={() => setKey((prevKey) => prevKey + 1)}
+      >
         <WordCard />
         <WordCard />
         <WordCard />
