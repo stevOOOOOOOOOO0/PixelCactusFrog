@@ -7,7 +7,7 @@ function WordCard() {
 
   return (
     <div className="imageWrapper">
-      <img src={imageToAdd} alt="..." width={210} />
+      <img src={imageToAdd} alt="..." width={window.innerWidth / 5} />
       <p className="cardText">{word}</p>
       <p className="flippedCardText">{word}</p>
     </div>
