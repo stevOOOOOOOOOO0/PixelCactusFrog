@@ -33,25 +33,28 @@
   bottom: 15%;
   margin: 0;
   color: black;
-  font-size: 1.75em;
+  word-wrap: break-word;
+  line-height: 1.1;
 }
 
 .flippedCardText {
   transform: rotate(180deg);
-  font-size: 1.75em;
   position: absolute;
   width: fit-content;
   height: fit-content;
   top: 15%;
   margin: 0;
   color: black;
+  word-wrap: break-word;
+  line-height: 1.1;
 }
 
 .cardContainer {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  width: calc();
+  width: fit-content;
+  justify-self: center;
 }
 
 .buttonContainer{
