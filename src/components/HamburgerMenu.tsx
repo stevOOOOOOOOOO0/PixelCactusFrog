@@ -51,9 +51,14 @@ function HamburgerMenu() {
         )}
       </>
     );
-  } else {
+  } else if (open) {
     return (
-      <button className="HamburgerMenu" onClick={() => setOpen((open) => true)}>
+      <button
+        className="HamburgerMenu"
+        onClick={() => {
+          setOpen(open);
+        }}
+      >
         ☰
       </button>
     );
