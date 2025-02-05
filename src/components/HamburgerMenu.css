@@ -8,6 +8,9 @@
     color: rgb(40, 40, 40);
     font-size: xx-large;
   }
+  .HamburgerMenu:hover {
+    border-color: rgba(0, 0, 0, 0);
+  }
 
   .HamburgerMenuInverted {
     color: white;

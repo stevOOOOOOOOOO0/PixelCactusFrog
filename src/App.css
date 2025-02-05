@@ -126,11 +126,11 @@
 
 @media (min-width: 1400px){
   .imageDiv {
-    width: 400px;
+    width: 300px;
   }
   
   .cardText {
-    width: 360px;
+    width: 260px;
     font-size: 4em;
   }
 
