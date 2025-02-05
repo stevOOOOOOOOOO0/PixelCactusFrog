@@ -1,5 +1,6 @@
 import "./HamburgerMenu.css";
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.css";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);
@@ -8,30 +9,47 @@ function HamburgerMenu() {
   if (open === true) {
     return (
       <>
-        <button
-          className="HamburgerMenu"
-          onClick={() => {
-            setOpen(!open);
-            setRulesOpen(false);
-          }}
-        >
-          ☰
-        </button>
-
         {!rulesOpen && (
           <div className="settingsMenu">
-            <button className="menuButton" onClick={() => setRulesOpen(true)}>
-              Rules
+            <ul className="list-group list-group-flush">
+              <button
+                className="list-group-item"
+                onClick={() => setRulesOpen(true)}
+              >
+                <text className="buttonText">Rules </text>
+              </button>
+              <button className="list-group-item">
+                <text className="buttonText">
+                  Card Filters -not functioning-
+                </text>
+              </button>
+              <button className="list-group-item">
+                <text className="buttonText">
+                  Next Menu Item -not functioning-
+                </text>
+              </button>
+            </ul>
+            <button
+              className={"HamburgerMenu HamburgerMenuInverted"}
+              onClick={() => {
+                setOpen(!open);
+                setRulesOpen(false);
+              }}
+            >
+              ☰
             </button>
           </div>
         )}
         {rulesOpen && (
           <div className="rulesPopup">
             <div className="card-body">
-              <button className="backArrow" onClick={() => setRulesOpen(false)}>
-                close
+              <button
+                className="HamburgerMenu HamburgerMenuInverted"
+                onClick={() => setRulesOpen(false)}
+              >
+                ↩
               </button>
-              <h2>How to Play</h2>
+              <h2 className="header-text">How to Play</h2>
               <p className="card-text">GOAL: create categories for points.</p>
               <p className="card-text">3 words will show on screen.</p>
               <p className="card-text">
