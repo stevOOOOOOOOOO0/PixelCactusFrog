@@ -5,7 +5,6 @@ import "../App.css";
 
 function WordCard() {
   const word = generateSlug(1, { partsOfSpeech: ["noun"] });
-  const textWidth = window.innerWidth / 6;
   //const [word, setWords] = useState("START");
 
   return (

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import WordCard from "./components/WordCard";
+import HamburgerMenu from "./components/HamburgerMenu";
 import "./App.css";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <text className="buttonText">Player 2: {count2} </text>
         </button>
       </div>
+      <HamburgerMenu></HamburgerMenu>
     </>
   );
 }

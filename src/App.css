@@ -180,10 +180,3 @@
   justify-self: center;
   justify-content: space-between;
 }
-
-.settingsDropDown{
-  display: flex;
-  position: absolute;
-  justify-self: left;
-  margin-left: 5vw;
-}
