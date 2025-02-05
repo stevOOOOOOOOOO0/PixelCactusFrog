@@ -51,12 +51,12 @@ function HamburgerMenu() {
         )}
       </>
     );
-  } else if (open) {
+  } else if (!open) {
     return (
       <button
         className="HamburgerMenu"
         onClick={() => {
-          setOpen(open);
+          setOpen(!open);
         }}
       >
         ☰
