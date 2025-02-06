@@ -24,9 +24,7 @@ function HamburgerMenu() {
                 </text>
               </button>
               <button className="list-group-item">
-                <text className="buttonText">
-                  Next Menu Item -not functioning-
-                </text>
+                <text className="buttonText">Game Modes -not functioning-</text>
               </button>
             </ul>
             <button
@@ -36,7 +34,7 @@ function HamburgerMenu() {
                 setRulesOpen(false);
               }}
             >
-              ☰
+              X
             </button>
           </div>
         )}

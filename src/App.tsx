@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="flippedOrientationButtons">
+      <div className="buttonContainer flippedOrientationButtons">
         <button
           onClick={() => setCount3((count3) => count3 + 1)}
           className="playerButton"

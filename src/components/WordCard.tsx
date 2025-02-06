@@ -9,7 +9,7 @@ function WordCard() {
     <div className="imageWrapper">
       <img className="imageDiv" src={imageToAdd} alt="..." />
       <p className="cardText">{word}</p>
-      <p className="flippedCardText">{word}</p>
+      <p className="cardText flippedCardText">{word}</p>
     </div>
   );
 }
