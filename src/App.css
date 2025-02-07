@@ -1,11 +1,14 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
-.flippedOrientationButtons{
-  transform: rotate(180deg);
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .playerButton {
@@ -13,7 +16,9 @@
   width: 10em;
   will-change: filter;
   transition: filter 300ms;
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(82, 82, 82);
+  border-top-left-radius: .25em;
+  border-top-right-radius: .25em;
 }
 .playerButton:hover {
   filter: drop-shadow(0 0 1em #f264ffaa);
@@ -157,9 +162,14 @@
   width:75%;
   flex-direction: row;
   margin-top: .5em;
+  margin-bottom: 0;
+  justify-content: space-evenly;
+}
+
+.flippedOrientationButtons{
+  transform: rotate(180deg);
   margin-bottom: .5em;
-  justify-self: center;
-  justify-content: space-between;
+  margin-top: 0;
 }
 
 .buttonText{
