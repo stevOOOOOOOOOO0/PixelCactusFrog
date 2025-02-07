@@ -53,6 +53,8 @@ function App() {
       <HamburgerMenu></HamburgerMenu>
     </>
   );
+
+  return <div>{key && <div></div>}</div>;
 }
 
 export default App;
