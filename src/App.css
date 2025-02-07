@@ -59,15 +59,10 @@
 
 @media (min-width: 375px){
   .imageDiv {
-    width: 10px;
+    width: 90px;
   }
   
   .cardText {
-    width: 80px;
-    font-size: 1em;
-  }
-
-  .flippedCardText {
     width: 80px;
     font-size: 1em;
   }
@@ -81,16 +76,11 @@
 
 @media (min-width: 500px){
   .imageDiv {
-    width: 120px;
+    width: 100px;
   }
   
   .cardText {
-    width: 100px;
-    font-size: 1.25em;
-  }
-
-  .flippedCardText {
-    width: 100px;
+    width: 85px;
     font-size: 1.25em;
   }
   
@@ -110,17 +100,10 @@
     width: 180px;
     font-size: 2em;
   }
-
-  .flippedCardText {
-    width: 180px;
-    font-size: 2em;
-  }
   
   .playerButton {
     height: 2.5em;
     width: 10em;
-    will-change: filter;
-    transition: filter 300ms;
     font-size: 1em;
   }
 }
@@ -134,17 +117,10 @@
     width: 260px;
     font-size: 4em;
   }
-
-  .flippedCardText {
-    width: 360px;
-    font-size: 4em;
-  }
   
   .playerButton {
     height: 3.5em;
     width: 10em;
-    will-change: filter;
-    transition: filter 300ms;
     font-size: 1em;
   }
 }
