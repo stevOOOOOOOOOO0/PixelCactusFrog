@@ -19,6 +19,7 @@
   background-color: rgb(82, 82, 82);
   border-top-left-radius: .25em;
   border-top-right-radius: .25em;
+  font-size: 12px;
 }
 .playerButton:hover {
   filter: drop-shadow(0 0 1em #f264ffaa);
@@ -38,14 +39,14 @@
 
 .cardText {
   position: absolute;
-  width: fit-content;
+  width: 90%;
   height: fit-content;
   bottom: 15%;
   margin: 0;
   color: black;
   word-wrap: break-word;
   line-height: 1.1;
-  font-size: 4vw;
+  font-size: 12px;
 }
 
 .flippedCardText {
@@ -54,57 +55,26 @@
 }
 
 .imageDiv {
-  width: 2px;
-}
-
-@media (min-width: 375px){
-  .imageDiv {
-    width: 50px;
-  }
-  
-  .cardText {
-    width: 80px;
-    font-size: 1em;
-  }
-  
-  .playerButton {
-    height: 3em;
-    width: 7.5em;
-    font-size: .75em;
-  }
+  width: 75px;
 }
 
 @media (min-width: 500px){
   .imageDiv {
-    width: 100px;
+    width: 125px;
   }
   
   .cardText {
-    width: 85px;
-    font-size: 1.25em;
-  }
-  
-  .playerButton {
-    height: 3em;
-    width: 7.5em;
-    font-size: .75em;
+    font-size: 18px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .imageDiv {
     width: 150px;
   }
   
   .cardText {
-    width: 180px;
-    font-size: 2em;
-  }
-  
-  .playerButton {
-    height: 3em;
-    width: 10em;
-    font-size: 1em;
+    font-size: 24px;
   }
 }
 
@@ -114,8 +84,7 @@
   }
   
   .cardText {
-    width: 180px;
-    font-size: 4em;
+    font-size: 36px;
   }
   
   .playerButton {

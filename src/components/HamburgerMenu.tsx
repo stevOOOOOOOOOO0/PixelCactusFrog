@@ -10,23 +10,27 @@ function HamburgerMenu() {
     return (
       <>
         {!rulesOpen && (
-          <div className="settingsMenu">
-            <ul className="list-group list-group-flush">
-              <button
-                className="list-group-item"
-                onClick={() => setRulesOpen(true)}
-              >
-                <text className="buttonText">Rules </text>
-              </button>
-              <button className="list-group-item">
-                <text className="buttonText">
-                  Card Filters -not functioning-
-                </text>
-              </button>
-              <button className="list-group-item">
-                <text className="buttonText">Game Modes -not functioning-</text>
-              </button>
-            </ul>
+          <>
+            <div className="settingsMenu">
+              <ul className="list-group list-group-flush">
+                <button
+                  className="list-group-item"
+                  onClick={() => setRulesOpen(true)}
+                >
+                  <text className="buttonText">Rules </text>
+                </button>
+                <button className="list-group-item">
+                  <text className="buttonText">
+                    Card Filters -not functioning-
+                  </text>
+                </button>
+                <button className="list-group-item">
+                  <text className="buttonText">
+                    Game Modes -not functioning-
+                  </text>
+                </button>
+              </ul>
+            </div>
             <button
               className={"HamburgerMenu HamburgerMenuInverted"}
               onClick={() => {
@@ -36,7 +40,7 @@ function HamburgerMenu() {
             >
               X
             </button>
-          </div>
+          </>
         )}
         {rulesOpen && (
           <div className="rulesPopup">
