@@ -59,7 +59,7 @@
 
 @media (min-width: 375px){
   .imageDiv {
-    width: 90px;
+    width: 50px;
   }
   
   .cardText {
@@ -93,7 +93,7 @@
 
 @media (min-width: 700px) {
   .imageDiv {
-    width: 200px;
+    width: 150px;
   }
   
   .cardText {
@@ -110,7 +110,7 @@
 
 @media (min-width: 1400px){
   .imageDiv {
-    width: 300px;
+    width: 200px;
   }
   
   .cardText {
