@@ -9,7 +9,7 @@ position: absolute;
 align-items: flex-start;
 justify-content: space-evenly;
 height: 100dvh;
-width: 100dvw;
+width: 100%;
 }
 
 .dashed-line {
