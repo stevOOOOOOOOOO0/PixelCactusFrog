@@ -1,5 +1,4 @@
 import { generateSlug } from "random-word-slugs";
-import imageToAdd from "../assets/Card-Background.svg";
 import "../App.css";
 
 function WordCard() {
