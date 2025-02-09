@@ -49,6 +49,10 @@
     color: white;
   }
 
+  .imageDiv {
+    width: 75px;
+  }
+
   .rulesPopup {
     position: absolute;
     display: flex;

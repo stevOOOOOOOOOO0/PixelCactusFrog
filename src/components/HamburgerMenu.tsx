@@ -1,6 +1,7 @@
 import "./HamburgerMenu.css";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import imageToAdd from "../assets/PixelCactusFrog.svg";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);
@@ -66,6 +67,7 @@ function HamburgerMenu() {
               <p className="card-text">
                 Tip: the whackier your categories the more fun the game will be.
               </p>
+              <img className="imageDiv" src={imageToAdd} alt="..." />
             </div>
           </div>
         )}
