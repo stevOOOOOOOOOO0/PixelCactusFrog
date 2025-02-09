@@ -3,6 +3,47 @@
   text-align: center;
 }
 
+.background {
+display: flex;
+position: absolute;
+align-items: flex-start;
+justify-content: space-evenly;
+height: 100dvh;
+width: 100dvw;
+}
+
+.dashed-line {
+  position: absolute;
+  border-bottom: 8px dashed rgb(82, 82, 82);
+  width: 100%;
+  height: 50%;
+  top: 0;
+}
+
+.green {
+background-color: #27B24E;
+width: 25%;
+height: 100%;
+}
+
+.yellow {
+  background-color: #E2AC27;
+  width: 25%;
+  height: 100%;
+}
+
+.blue {
+  background-color: #34C9E7;
+  width: 25%;
+  height: 100%;
+}
+
+.pink {
+  background-color: #F27AA3;
+  width: 25%;
+  height: 100%;
+}
+
 .flexContainer {
   display: flex;
   flex-direction: column;
@@ -30,27 +71,24 @@
 
 .imageWrapper {
   display: flex;
-  width: fit-content;
-  height: fit-content;
   position: relative;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-}
-
-.blankCard {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(255, 255, 255);
   border-radius: .25em;
   height: 100px;
   width: 200px;
   box-shadow: 4px 3px 8px rgb(0, 0, 0);
 }
 
+.topBottomCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .cardText {
-  position: absolute;
   width: 90%;
-  height: fit-content;
-  bottom: 15%;
-  margin: 0;
   color: black;
   word-wrap: break-word;
   line-height: 1.1;
@@ -59,7 +97,6 @@
 
 .flippedCardText {
   transform: rotate(180deg);
-  top: 15%;
 }
 
 .imageDiv {
@@ -108,6 +145,7 @@
   gap: 1em;
   width: fit-content;
   justify-self: center;
+  flex-grow: 5;
 }
 
 .buttonContainer{
@@ -123,6 +161,10 @@
   transform: rotate(180deg);
   margin-bottom: .5em;
   margin-top: 0;
+}
+
+.flippedOrientation {
+  rotate: 180deg;
 }
 
 .buttonText{

@@ -12,6 +12,13 @@ function App() {
 
   return (
     <>
+      <div className="background">
+        <div className="green" />
+        <div className="yellow" />
+        <div className="blue" />
+        <div className="pink" />
+      </div>
+      <div className="dashed-line" />
       <div className="flexContainer">
         <div className="buttonContainer flippedOrientationButtons">
           <button
@@ -50,7 +57,7 @@ function App() {
           </button>
         </div>
       </div>
-      <HamburgerMenu></HamburgerMenu>
+      <HamburgerMenu />
     </>
   );
 

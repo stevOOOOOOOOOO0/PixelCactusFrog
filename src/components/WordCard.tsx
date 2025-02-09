@@ -6,19 +6,13 @@ function WordCard() {
   const word = generateSlug(1, { partsOfSpeech: ["noun"] });
 
   return (
-    <>
-      <div className="imageWrapper">
-        <div className="blankCard"></div>
+    <div className="topBottomCardContainer">
+      <div className="imageWrapper flippedOrientation">
         <p className="cardText">{word}</p>
       </div>
-    </>
-  );
-
-  return (
-    <div className="imageWrapper">
-      <img className="imageDiv" src={imageToAdd} alt="..." />
-      <p className="cardText">{word}</p>
-      <p className="cardText flippedCardText">{word}</p>
+      <div className="imageWrapper">
+        <p className="cardText">{word}</p>
+      </div>
     </div>
   );
 }
