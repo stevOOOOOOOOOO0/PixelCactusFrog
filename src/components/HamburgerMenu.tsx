@@ -1,7 +1,10 @@
 import "./HamburgerMenu.css";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import imageToAdd from "../assets/PixelCactusFrog.svg";
+import PixelFrog from "../assets/PixelCactusFrog.svg";
+import HamburgerIcon from "../assets/Hamburger.svg";
+import BackArrowIcon from "../assets/Back Arrow.svg";
+import closeIcon from "../assets/Close.svg";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);
@@ -32,42 +35,44 @@ function HamburgerMenu() {
                 </button>
               </ul>
             </div>
-            <button
-              className={"HamburgerMenu HamburgerMenuInverted"}
+            <img
+              className="HamburgerMenu"
+              src={closeIcon}
+              alt="..."
               onClick={() => {
                 setOpen(!open);
                 setRulesOpen(false);
               }}
-            >
-              X
-            </button>
+            ></img>
           </>
         )}
         {rulesOpen && (
           <div className="rulesPopup">
             <div className="card-body">
-              <button
-                className="HamburgerMenu HamburgerMenuInverted"
+              <img
+                className="HamburgerMenu"
+                src={BackArrowIcon}
+                alt="..."
                 onClick={() => setRulesOpen(false)}
-              >
-                ↩
-              </button>
+              ></img>
               <h2 className="header-text">How to Play</h2>
-              <p className="card-text">GOAL: create categories for points.</p>
-              <p className="card-text">3 words will show on screen.</p>
-              <p className="card-text">
+              <p className="secondaryText">
+                GOAL: create categories for points.
+              </p>
+              <p className="secondaryText">3 words will show on screen.</p>
+              <p className="secondaryText">
                 Race to see who can come up with a category that fits all three
                 words.
               </p>
-              <p className="card-text">Say it out loud.</p>
-              <p className="card-text">
+              <p className="secondaryText">Say it out loud.</p>
+              <p className="secondaryText">
                 If everyone agrees give yourself a point.
               </p>
-              <p className="card-text">Repeat.</p>
-              <p className="card-text">
+              <p className="secondaryText">Repeat.</p>
+              <p className="secondaryText">
                 Tip: the whackier your categories the more fun the game will be.
               </p>
-              <img className="imageDiv" src={imageToAdd} alt="..." />
+              <img className="imageDiv" src={PixelFrog} alt="..." />
             </div>
           </div>
         )}
@@ -75,14 +80,14 @@ function HamburgerMenu() {
     );
   } else if (!open) {
     return (
-      <button
+      <img
         className="HamburgerMenu"
+        src={HamburgerIcon}
+        alt="..."
         onClick={() => {
           setOpen(!open);
         }}
-      >
-        ☰
-      </button>
+      />
     );
   }
 }

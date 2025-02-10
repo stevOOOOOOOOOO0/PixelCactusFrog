@@ -25,13 +25,13 @@ function App() {
             onClick={() => setCount3((count3) => count3 + 1)}
             className="playerButton"
           >
-            <text className="buttonText">Player 3: {count3} </text>
+            <text className="secondaryText">Player 3: {count3} </text>
           </button>
           <button
             onClick={() => setCount4((count4) => count4 + 1)}
             className="playerButton"
           >
-            <text className="buttonText">Player 4: {count4} </text>
+            <text className="secondaryText">Player 4: {count4} </text>
           </button>
         </div>
         <div
@@ -47,13 +47,13 @@ function App() {
             onClick={() => setCount1((count1) => count1 + 1)}
             className="playerButton"
           >
-            <text className="buttonText">Player 1: {count1} </text>
+            <text className="secondaryText">Player 1: {count1} </text>
           </button>
           <button
             onClick={() => setCount2((count2) => count2 + 1)}
             className="playerButton"
           >
-            <text className="buttonText">Player 2: {count2} </text>
+            <text className="secondaryText">Player 2: {count2} </text>
           </button>
         </div>
       </div>

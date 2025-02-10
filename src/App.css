@@ -1,5 +1,4 @@
 #root {
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -14,7 +13,7 @@ width: 100%;
 
 .dashed-line {
   position: absolute;
-  border-bottom: 8px dashed rgb(82, 82, 82);
+  border-bottom: 8px dashed #56495E;
   width: 100%;
   height: calc(50% + 4px);
   top: 0;
@@ -57,7 +56,7 @@ height: 100%;
   width: 10em;
   will-change: filter;
   transition: filter 300ms;
-  background-color: rgb(82, 82, 82);
+  background-color: #56495E;
   border-top-left-radius: .25em;
   border-top-right-radius: .25em;
   font-size: 12px;
@@ -76,9 +75,9 @@ height: 100%;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   border-radius: .25em;
-  height: 100px;
-  width: 200px;
-  box-shadow: 4px 3px 8px rgb(0, 0, 0);
+  height: 50px;
+  width: 100px;
+  box-shadow: 4px 3px 8px #56495E;
 }
 
 .topBottomCardContainer {
@@ -89,59 +88,47 @@ height: 100%;
 
 .cardText {
   width: 90%;
-  color: black;
+  color: #000000;
   word-wrap: break-word;
   line-height: 1.1;
-  font-size: 12px;
+  font-size: 16px;
+  font-family: "Permanent Marker";
+  margin: 0;
 }
 
 .flippedCardText {
   transform: rotate(180deg);
 }
 
-@media (min-width: 500px){
-  .imageDiv {
-    width: 125px;
-  }
-  
-  .cardText {
-    font-size: 18px;
-  }
-
-  .imageWrapper {
-    height: 50px;
-    width: 100px;
-  }
+.secondaryText{
+  font-family: "serif";
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  line-height: 1.1;
 }
 
-@media (min-width: 800px) {
-  .imageDiv {
-    width: 150px;
-  }
-  
+@media (min-width: 800px) {  
   .cardText {
     font-size: 24px;
   }
 
+  .secondaryText {
+    font-size: 16px;
+  }
+
   .imageWrapper {
-    height: 100px;
+    height: 75px;
     width: 200px;
   }
 }
 
-@media (min-width: 1400px){
-  .imageDiv {
-    width: 200px;
-  }
-  
+@media (min-width: 1400px){  
   .cardText {
     font-size: 36px;
   }
   
-  .playerButton {
-    height: 3em;
-    width: 10em;
-    font-size: 1em;
+  .secondaryText {
+    font-size: 24px;
   }
 
   .imageWrapper {
@@ -176,9 +163,4 @@ height: 100%;
 
 .flippedOrientation {
   rotate: 180deg;
-}
-
-.buttonText{
-  font-family: "serif";
-  color: black;
 }

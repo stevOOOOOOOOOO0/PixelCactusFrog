@@ -6,7 +6,7 @@
     top: 0;
     background-color: rgba(255, 0, 0, 0);
     color: rgb(40, 40, 40);
-    font-size: xx-large;
+    width: 40px;
   }
   .HamburgerMenu:hover {
     border-color: rgba(0, 0, 0, 0);
@@ -28,12 +28,12 @@
     bottom: 0;
     background-color: rgba(24, 24, 24, 0.95);
     padding: 1em;
-    font-family: "serif";
+    font-family: "Permanent Marker";
     font-weight: 500;
   }
 
   .list-group-flush {
-    width: 15em;
+    width: fit fit-content;
     height: fit-content;
     position: relative;
     justify-self: center;
@@ -47,10 +47,7 @@
   .buttonText{
     font-family: "serif";
     color: white;
-  }
-
-  .imageDiv {
-    width: 75px;
+    font-size: 18px;
   }
 
   .rulesPopup {
@@ -64,7 +61,6 @@
     background-color: rgba(24, 24, 24, 0.95);
     padding: 1em;
     font-family: "serif";
-    font-weight: 500;
   }
 
   .card-text {
@@ -81,7 +77,7 @@
     justify-self: center;
     align-self: center;
     line-height: 2em;
-    font-family: "serif";
+    font-family: "Permanent Marker";
     color: white;
   }
 
@@ -102,4 +98,32 @@
     color: rgb(0, 0, 0);
     background-color: rgb(209, 209, 209);
     border-color: rgba(0, 0, 128, 0);
+  }
+
+  .imageDiv {
+    width: 48px;
+  }
+  
+  @media (min-width: 800px) {
+    .buttonText {
+      font-size: 24px;
+    }
+
+    .HamburgerMenu {
+      padding-right: 1em;
+      padding-top: .5em;
+      width: 50px;
+    }
+  }
+  
+  @media (min-width: 1400px){
+    .buttonText {
+      font-size: 36px;
+    }
+
+    .HamburgerMenu {
+      padding-right: 1em;
+      padding-top: .5em;
+      width: 50px;
+    }
   }
