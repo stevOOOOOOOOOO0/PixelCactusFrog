@@ -1,16 +1,13 @@
-import { generateSlug } from "random-word-slugs";
 import "../App.css";
 
-function WordCard() {
-  const word = generateSlug(1, { partsOfSpeech: ["noun"] });
-
+function WordCard(props: { word: string }) {
   return (
     <div className="topBottomCardContainer">
       <div className="imageWrapper flippedOrientation">
-        <p className="cardText">{word}</p>
+        <p className="cardText">{props.word}</p>
       </div>
       <div className="imageWrapper">
-        <p className="cardText">{word}</p>
+        <p className="cardText">{props.word}</p>
       </div>
     </div>
   );
