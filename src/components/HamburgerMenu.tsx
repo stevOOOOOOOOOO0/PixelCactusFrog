@@ -48,13 +48,13 @@ function HamburgerMenu() {
         )}
         {rulesOpen && (
           <div className="rulesPopup">
-            <div className="card-body">
+            <div className="settingsInfoContainer">
               <img
                 className="HamburgerMenu"
                 src={BackArrowIcon}
                 alt="..."
                 onClick={() => setRulesOpen(false)}
-              ></img>
+              />
               <h2 className="header-text">How to Play</h2>
               <p className="secondaryText">
                 GOAL: create categories for points.
