@@ -15,7 +15,7 @@ function PlayerCounters(props: { onChange: () => void }) {
         borderTopLeftRadius: ".25em",
         borderTopRightRadius: ".25em",
         backgroundColor: "rgba(255, 255, 255, 1)",
-        zIndex: 10,
+        zIndex: 1,
       }}
     >
       <button
@@ -28,7 +28,7 @@ function PlayerCounters(props: { onChange: () => void }) {
         style={{
           minWidth: "3em",
           color: "black",
-          fontFamily: "Permanent Marker",
+          fontFamily: "Roboto",
         }}
         className="secondaryText"
       >

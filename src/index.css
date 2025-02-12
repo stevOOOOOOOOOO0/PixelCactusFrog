@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  font-family: "Permanent Marker", serif;
+  font-family: serif, "Roboto", "Roboto Mono";
   font-style: normal;
   font-weight: 400;
 
